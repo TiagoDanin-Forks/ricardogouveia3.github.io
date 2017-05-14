@@ -12,9 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" type="text/css" href="/css/screen.css" /> <!-- original file -->
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="/css/main.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -28,19 +26,19 @@
   <meta name="twitter:creator" content="@ricardogouveia3">
   <meta name="twitter:title" content="Ricardo Gouveia - Front-end developer &amp;&amp; interface design lover">
   <meta name="twitter:description" content="Um blog sobre front-end, design, e outros assuntos relacionados">
-  <meta name="twitter:image" content="http://ricardogouveia3.github.io/img/opengraph_img.png">
+  <meta name="twitter:image" content="http://ricardogouveia3.github.io/img/opengraph_img.jpg">
 
   <!-- Facebook/Open Graph -->
   <meta property="og:url" content="http://ricardogouveia3.github.io/archives/index.html">
   <meta property="og:type" content="blog">
   <meta property="og:title" content="Ricardo Gouveia - Front-end developer &amp;&amp; interface design lover">
-  <meta property="og:image" content="http://ricardogouveia3.github.io/img/opengraph_img.png">
+  <meta property="og:image" content="http://ricardogouveia3.github.io/img/opengraph_img.jpg">
   <meta property="og:description" content="Um blog sobre front-end, design, e outros assuntos relacionados">
   <meta property="og:site_name" content="Ricardo Gouveia">
 
   <meta itemprop="name" content="Ricardo Gouveia - Front-end developer &amp;&amp; interface design lover" />
   <meta itemprop="description" content="Um blog sobre front-end, design, e outros assuntos relacionados">
-  <meta itemprop="image" content="Ricardo Gouveia/img/opengraph_img.png" />
+  <meta itemprop="image" content="Ricardo Gouveia/img/opengraph_img.jpg" />
 
   
   
@@ -50,183 +48,145 @@
 
 <body class="home-template">
 
-  <header id="header" class="container-fluid header" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), no-repeat center url(/img/cover.png);">
-  <div class="header-content row justify-content-center">
-    <div class="col-12 align-self-center text-center">
+  <header id="header" class="header" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), no-repeat center url(/img/cover.jpg); background-size: cover;">
+  <div class="header-content">
+    <div class="">
       <a href="/">
-        <img class="avatar" src="/img/avatar.png"></img>
+        <img class="avatar" src="/img/avatar.jpg"></img>
         <h1 class="blog-title">Ricardo Gouveia</h1>
         <span class="blog-description">Front-end developer && interface design lover</span>
       </a>
     </div>
   </div>
 </header>
-  <nav class="navbar primary-nav" id="menu">
-  <div class="row navbar-nav">
-    <ul class="text-center primary-nav-list">
+  <nav class="main-menu" id="menu">
+    <ul class="list">
     
-      <li class="navbar-text"><a class="primary-nav-list-item active" href="/">Home</a></li>
+      <li class="text"><a class="item" href="/">Home</a></li>
     
-      <li class="navbar-text"><a class="primary-nav-list-item active" href="/About-Me/">About Me</a></li>
+      <li class="text"><a class="item" href="/About-Me/">About Me</a></li>
     
     </ul>
-  </div>
 </nav>
 
 <!-- Menu active states are handled by jQuery on index.js file -->
 
-  <section class="container" id="container">
-  <div class="row">
+  <section class="card-container" id="container">
   
 
-<section class="blogpost-card col-12 col-sm-6 col-lg-4 col-xl-3">
-  <a href="/post/22-04-2017/desenvolvimento-orientado-modinha-sindrome-impostor-e-dev-jr/">
-    <div class="blogpost-card-wrapper">
-      <div class="blogpost-card-img" style="background: url(/post/22-04-2017/desenvolvimento-orientado-modinha-sindrome-impostor-e-dev-jr/featured.jpg) no-repeat center top; background-size: cover;">
-        <div class="blogpost-card-date">
-          22 Abr 2017
-        </div>
+    <article onclick="location.href='/post/16-10-2015/do-ubuntu-ao-mac-os-porque/';" class="blogpost-card">
+      <div class="wrapper" style="background: url(/post/16-10-2015/do-ubuntu-ao-mac-os-porque/featured.jpg) no-repeat bottom; background-size: cover;">
+        <a href="/post/16-10-2015/do-ubuntu-ao-mac-os-porque/">
+          <div class="bottom-push">
+            <div class="date">
+              16 Out 2015
+            </div>
+            <div class="content">
+              <h4 class="title">Porque migrar do ubuntu para o macOS?</h4>
+              <span class="description">Mesmo que o Linux seja um bom sistema operacional, existe motivos convidativos para migrar para o macOS</span>
+              <span>
+                
+                
+                
+                <a class="tag" href="/tags/macOS/">#macOS</a>
+                
+                <a class="tag" href="/tags/ubuntu/">#ubuntu</a>
+                
+                <a class="tag" href="/tags/migracao/">#migração</a>
+                
+                
+              </span>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="blogpost-card-content">
-        <h4 class="blogpost-card-title">Hype driven dev (HDD), síndrome do impostor, e o Dev jr</h4>
-        <span class="blogpost-card-description">Tecnologias “hype” causam sensação de incapacidade nos iniciantes - e isso é ruim pra todos</span>
-        <span>
-          
-          
-          
-          <a class="blogpost-card-tag" href="/tags/Hype/">#Hype</a>
-          
-          <a class="blogpost-card-tag" href="/tags/Sindrome/">#Síndrome</a>
-          
-          <a class="blogpost-card-tag" href="/tags/Impostor/">#Impostor</a>
-          
-          
-        </span>
+    </article>
+
+  
+
+    <article onclick="location.href='/post/04-05-2015/minhas-melhores-extensões-gnome-3-14/';" class="blogpost-card">
+      <div class="wrapper" style="background: url(/post/04-05-2015/minhas-melhores-extensões-gnome-3-14/featured.jpg) no-repeat bottom; background-size: cover;">
+        <a href="/post/04-05-2015/minhas-melhores-extensões-gnome-3-14/">
+          <div class="bottom-push">
+            <div class="date">
+              04 Mai 2015
+            </div>
+            <div class="content">
+              <h4 class="title">As 3 Melhores Extensões Do Ambiente Gnome 3.14</h4>
+              <span class="description">O gnome é uma excelente interface para linux, mas com alguns ajustes, ele pode ficar ainda melhor!</span>
+              <span>
+                
+                
+                
+                <a class="tag" href="/tags/ubuntu/">#ubuntu</a>
+                
+                <a class="tag" href="/tags/extensões/">#extensões</a>
+                
+                <a class="tag" href="/tags/gnome/">#gnome</a>
+                
+                
+              </span>
+            </div>
+          </div>
+        </a>
       </div>
-    </div>
-  </a>
+    </article>
+
+  
+
+    <article onclick="location.href='/post/14-03-2015/ubuntu-gnome-14-10-after-install-usuarios-artistas/';" class="blogpost-card">
+      <div class="wrapper" style="background: url(/post/14-03-2015/ubuntu-gnome-14-10-after-install-usuarios-artistas/featured.jpg) no-repeat bottom; background-size: cover;">
+        <a href="/post/14-03-2015/ubuntu-gnome-14-10-after-install-usuarios-artistas/">
+          <div class="bottom-push">
+            <div class="date">
+              14 Mar 2015
+            </div>
+            <div class="content">
+              <h4 class="title">Ubuntu Gnome 14.10 after install para usuários artistas</h4>
+              <span class="description">Em geral, o designer trabalha no Mac OS. No Brasil, a gente dá um jeitinho.</span>
+              <span>
+                
+                
+                
+                <a class="tag" href="/tags/ubuntu/">#ubuntu</a>
+                
+                <a class="tag" href="/tags/after-install/">#after-install</a>
+                
+                <a class="tag" href="/tags/linux/">#linux</a>
+                
+                
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </article>
+
+  
 </section>
 
-  
-
-<section class="blogpost-card col-12 col-sm-6 col-lg-4 col-xl-3">
-  <a href="/post/16-10-2015/do-ubuntu-ao-mac-os-porque/">
-    <div class="blogpost-card-wrapper">
-      <div class="blogpost-card-img" style="background: url(/post/16-10-2015/do-ubuntu-ao-mac-os-porque/featured.jpg) no-repeat center top; background-size: cover;">
-        <div class="blogpost-card-date">
-          16 Out 2015
-        </div>
-      </div>
-      <div class="blogpost-card-content">
-        <h4 class="blogpost-card-title">Porque migrar do ubuntu para o macOS?</h4>
-        <span class="blogpost-card-description">Mesmo que o Linux seja um bom sistema operacional, existe motivos convidativos para migrar para o macOS</span>
-        <span>
-          
-          
-          
-          <a class="blogpost-card-tag" href="/tags/macOS/">#macOS</a>
-          
-          <a class="blogpost-card-tag" href="/tags/ubuntu/">#ubuntu</a>
-          
-          <a class="blogpost-card-tag" href="/tags/migracao/">#migração</a>
-          
-          
-        </span>
-      </div>
-    </div>
-  </a>
-</section>
-
-  
-
-<section class="blogpost-card col-12 col-sm-6 col-lg-4 col-xl-3">
-  <a href="/post/04-05-2015/minhas-melhores-extensões-gnome-3-14/">
-    <div class="blogpost-card-wrapper">
-      <div class="blogpost-card-img" style="background: url(/post/04-05-2015/minhas-melhores-extensões-gnome-3-14/featured.jpg) no-repeat center top; background-size: cover;">
-        <div class="blogpost-card-date">
-          04 Mai 2015
-        </div>
-      </div>
-      <div class="blogpost-card-content">
-        <h4 class="blogpost-card-title">As 3 Melhores Extensões Do Ambiente Gnome 3.14</h4>
-        <span class="blogpost-card-description">O gnome é uma excelente interface para linux, mas com alguns ajustes, ele pode ficar ainda melhor!</span>
-        <span>
-          
-          
-          
-          <a class="blogpost-card-tag" href="/tags/ubuntu/">#ubuntu</a>
-          
-          <a class="blogpost-card-tag" href="/tags/extensões/">#extensões</a>
-          
-          <a class="blogpost-card-tag" href="/tags/gnome/">#gnome</a>
-          
-          
-        </span>
-      </div>
-    </div>
-  </a>
-</section>
-
-  
-
-<section class="blogpost-card col-12 col-sm-6 col-lg-4 col-xl-3">
-  <a href="/post/14-03-2015/ubuntu-gnome-14-10-after-install-usuarios-artistas/">
-    <div class="blogpost-card-wrapper">
-      <div class="blogpost-card-img" style="background: url(/post/14-03-2015/ubuntu-gnome-14-10-after-install-usuarios-artistas/featured.jpg) no-repeat center top; background-size: cover;">
-        <div class="blogpost-card-date">
-          14 Mar 2015
-        </div>
-      </div>
-      <div class="blogpost-card-content">
-        <h4 class="blogpost-card-title">Ubuntu Gnome 14.10 after install para usuários artistas</h4>
-        <span class="blogpost-card-description">Em geral, o designer trabalha no Mac OS. No Brasil, a gente dá um jeitinho.</span>
-        <span>
-          
-          
-          
-          <a class="blogpost-card-tag" href="/tags/ubuntu/">#ubuntu</a>
-          
-          <a class="blogpost-card-tag" href="/tags/after-install/">#after-install</a>
-          
-          <a class="blogpost-card-tag" href="/tags/linux/">#linux</a>
-          
-          
-        </span>
-      </div>
-    </div>
-  </a>
-</section>
-
-  
-  </div>
-
-<div class="row justify-content-center">
-  <nav class="nav-pagination">
-    <ul class="pagination">
-      <li>
-         <a class="nav-pagination-part nav-pagination-link-disabled" href="">&#10094;</a> 
+<section class="pagination-container">
+  <nav class="pagination-menu">
+    <ul class="list">
+      <li class="item">
+         <span class="part disabled" href="">&#10094;</span> 
       </li>
-      <li>
-        <span class = "nav-pagination-part nav-pagination-indicator">1 &ndash; 1</span>
+      <li class="item">
+        <span class = "part indicator">1 &ndash; 1</span>
       </li>
-      <li>
-         <a class="nav-pagination-part nav-pagination-link-disabled" href="">&#10095;</a> 
+      <li class="item">
+         <spana class="part disabled">&#10095;</span> 
       </li>
     </ul>
   </nav>
-</div>
-
 </section>
 
 
 
-
-  <footer id="footer" class="container-fluid footer">
-  <div class="row justify-content-center align-items-center">
+  <footer id="footer" class="footer">
     <p class="footer-text">
       Escrito por <a class="footer-link" href="http://twitter.com/ricardogouveia3">Ricardo Gouveia</a> &ndash; Creative Commons <a class="footer-link" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> &ndash; Publicado com <a class="footer-link" target="_blank" href="http://hexo.io/">Hexo.js</a>
     </p>
-  </div>
 </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

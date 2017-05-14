@@ -16,8 +16,8 @@
 
 /* Active link on main-nav */
 $(document).ready(function() {
-  $('a.primary-nav-list-item').removeClass('active');
-  $('a.primary-nav-list-item[href="' + location.pathname + '"]').addClass('active');
+  $('.main-menu .list a.item').removeClass('active');
+  $('.main-menu .list a.item[href="' + location.pathname + '"]').addClass('active');
 });
 
 /* Footer to the end of the page */
