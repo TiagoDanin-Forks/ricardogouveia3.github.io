@@ -1,790 +1,135 @@
-/* line 49, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-* {
-  box-sizing: border-box; }
-
-/* line 51, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-html {
-  font-size: 16px; }
-
-/* line 53, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
+* { box-sizing: border-box; }
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
   text-rendering: optimizeLegibility;
-  background-color: #f6f6f6;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif; }
+  -moz-osx-font-smoothing:  grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
-/* line 61, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-::-moz-selection, ::selection {
-  color: #222222;
-  background: #D6EDFF;
-  text-shadow: none; }
+/** Sidebar **/
 
-/* line 67, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-a {
-  transition: color ease 0.3s;
-  color: #55918C;
-  text-decoration: none;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-all;
-  word-break: break-word;
-  hyphens: auto; }
-  /* line 71, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  a:hover {
-    color: #4ecdc4; }
-
-/* line 81, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h1, h2, h3, h4,
-h5, h6, ul, ol,
-dl, hr, blockquote,
-figure, p {
-  width: 100%; }
-
-/* line 86, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h1, h2, h3,
-h4, h5, h6 {
-  margin-top: 0;
+.sidebar {
+  width: 60%;
+  min-width: 300px;
+  height: 100vh;
+  background-color: #4ecdc4;
+  text-align: center;
+}
+.sidebar .content {
+  margin-top: 13vh;
+  padding: 0 .8em;
+}
+.avatar {
+  border: solid .7ch white;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 30%;
+}
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8em;
   font-weight: bold;
-  line-height: 1.2;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  color: #4a4a4a;
-  text-indent: 0; }
-
-/* line 96, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h1 {
-  font-size: 2.8rem; }
-
-/* line 97, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h2 {
-  font-size: 2.6rem; }
-
-/* line 98, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h3 {
-  font-size: 2.4rem; }
-
-/* line 99, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h4 {
-  font-size: 2.2rem; }
-
-/* line 100, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h5 {
-  font-size: 2rem; }
-
-/* line 101, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-h6 {
-  font-size: 1.8rem; }
-
-/* line 103, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-ul li {
-  list-style-type: circle; }
-  /* line 105, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ul li ul, ul li ol {
-    padding: 0; }
-  /* line 106, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ul li ul li {
-    list-style-type: square; }
-  /* line 107, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ul li ol li {
-    list-style-type: decimal; }
-
-/* line 109, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-ol li {
-  list-style-type: decimal; }
-  /* line 111, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ol li ul, ol li ol {
-    padding: 0; }
-  /* line 112, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ol li ol li {
-    list-style-type: lower-alpha; }
-  /* line 113, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ol li ul li {
-    list-style-type: circle; }
-
-/* line 115, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-ul, ol, dl {
-  margin-bottom: 1em; }
-  /* line 117, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ul li, ol li, dl li {
-    text-indent: 0;
-    margin-left: 2em; }
-  /* line 118, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ul dt, ol dt, dl dt {
-    font-weight: bold; }
-  /* line 119, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ul dd, ol dd, dl dd {
-    margin-left: 3em; }
-
-/* line 121, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-nav li {
-  list-style-type: none;
-  margin: 0; }
-
-/* line 126, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
+  color: white;
+  margin-bottom: 10px;
+}
 hr {
-  height: 1px;
+  width: 70%;
+  opacity: .6;
   border: 0;
-  border-top: 1px solid #ecf0f1;
-  margin: 1.8rem auto; }
-
-/* line 133, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-blockquote {
-  text-indent: 0;
-  margin: .5rem 0 1rem 0;
-  padding-left: 2rem;
-  border-left: #4ecdc4 0.4rem solid; }
-  /* line 138, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  blockquote p {
-    font-size: 1.2rem;
-    margin-top: .8rem;
-    font-style: italic; }
-  /* line 143, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  blockquote footer {
-    display: block;
-    margin-top: .8rem;
-    font-size: 0.9rem;
-    color: #b6b9ba; }
-  /* line 149, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  blockquote cite:before {
-    content: '\00A0 \2014 \00A0'; }
-
-/* line 152, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-code, tt {
-  padding: 1px 5px;
-  font-family: "Operator Mono", "Roboto Mono", "Monaco", monospace;
-  font-size: .9rem;
-  white-space: pre-wrap;
-  color: #323232;
-  border: 1px solid #ecf0f1;
-  background: #f6f6f6;
-  border-radius: 2px; }
-
-/* line 163, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-pre {
-  text-indent: 0;
-  margin: 1rem 0;
-  padding: 5px;
-  font-family: "Operator Mono", "Roboto Mono", "Monaco", monospace;
-  font-size: 0.9rem;
-  white-space: pre;
-  overflow: auto;
-  color: #323232;
-  border: 1px solid #ecf0f1;
-  background: #f6f6f6;
-  border-radius: 2px; }
-  /* line 175, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  pre code, pre tt {
-    font-size: inherit;
-    white-space: -moz-pre-wrap;
-    white-space: pre-wrap;
-    background: transparent;
-    border: none;
-    padding: 0; }
-
-/* line 185, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-kbd {
-  display: inline-block;
-  margin-bottom: 0.4em;
-  padding: 1px 8px;
-  border: #ccc 1px solid;
-  color: #666;
-  text-shadow: #fff 0 1px 0;
-  font-size: 0.9em;
-  font-weight: bold;
-  background: #f4f4f4;
-  border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset; }
-
-/* line 201, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-table {
-  text-indent: 0;
-  margin: 1.6em 0;
-  width: 100%;
-  max-width: 100%;
-  background-color: transparent;
-  overflow-x: auto; }
-  /* line 208, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table table th {
-    color: #000; }
-  /* line 209, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table th, table td {
-    padding: 8px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: top;
-    border-top: 1px solid #efefef; }
-  /* line 216, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table thead {
-    background-color: #4a4a4a;
-    color: #ecf0f1;
-    font-style: bold; }
-  /* line 221, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table caption + thead tr:first-child th,
-  table caption + thead tr:first-child td,
-  table colgroup + thead tr:first-child th,
-  table colgroup + thead tr:first-child td,
-  table thead:first-child tr:first-child th,
-  table thead:first-child tr:first-child td {
-    border-top: 0; }
-  /* line 229, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table tbody + tbody {
-    border-top: 2px solid #efefef; }
-  /* line 230, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table table table {
-    background-color: #fff; }
-  /* line 231, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table tbody > tr:nth-child(odd) > td,
-  table tbody > tr:nth-child(odd) > th {
-    background-color: #f6f6f6; }
-  /* line 235, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  table table.plain tbody > tr:nth-child(odd) > td,
-  table table.plain tbody > tr:nth-child(odd) > th {
-    background: transparent; }
-
-/* line 241, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-iframe, .fluid-width-video-wrapper {
-  display: block;
-  margin: 1.6em 0; }
-
-/* When a video is inside the fitvids wrapper, drop the
-margin on the iframe, cause it breaks stuff. */
-/* line 248, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.fluid-width-video-wrapper iframe {
-  margin: 0; }
-
-/* line 256, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 11rem;
-  background-size: cover;
-  padding: 0 3ch; }
-  /* line 262, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .header .avatar {
-    width: 5.5rem;
-    border: 0.5ch solid #ecf0f1;
-    border-radius: 50%; }
-  /* line 267, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .header .blog-title {
-    font: bold 1.3rem/1.5 "Open Sans", "Helvetica", "Arial", sans-serif;
-    margin-bottom: 0;
-    color: #ecf0f1; }
-  /* line 272, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .header .blog-description {
-    font: 1rem "Operator Mono", "Roboto Mono", "Monaco", monospace;
-    color: #ecf0f1; }
-
-/* line 278, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 5ch;
-  height: 3ch;
-  background-color: #4a4a4a; }
-  /* line 283, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .footer .footer-text {
-    font: 0.7rem/1.3 "Open Sans", "Helvetica", "Arial", sans-serif;
-    color: #f6f6f6;
-    text-align: center;
-    letter-spacing: 1.3px; }
-  /* line 289, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .footer .footer-link {
-    transition: color ease 0.3s;
-    color: #f6f6f6;
-    font-weight: 600; }
-    /* line 293, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .footer .footer-link:hover {
-      color: #4ecdc4; }
-
-/* line 301, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.main-menu {
-  background-color: #4a4a4a;
-  margin-bottom: 2rem;
-  height: 3.3rem; }
-  /* line 305, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .main-menu .list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%; }
-  /* line 310, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .main-menu .item {
-    transition: color ease 0.3s;
-    margin: 0 3ch;
-    font: 0.85rem "Open Sans", "Helvetica", "Arial", sans-serif;
-    color: #ecf0f1;
-    text-transform: uppercase;
-    letter-spacing: 1.6px; }
-    /* line 317, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .main-menu .item:hover {
-      color: #b6b9ba; }
-    /* line 318, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .main-menu .item.active {
-      color: #4ecdc4; }
-    /* line 319, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .main-menu .item:focus, .main-menu .item:active {
-      background-color: #ecf0f1;
-      color: #4a4a4a; }
-
-/* line 329, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
+  border-top: 1px solid white;
+}
+.description {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  line-height: 1.2;
+  color: white;
+}
+.social ul {
   margin: 0 auto;
-  width: 85%;
-  padding: 0; }
-
-/* line 337, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.blogpost-card {
-  flex-grow: 1;
-  width: 31%;
-  margin: 0 1.3ch;
+  margin-top: 20px;
   display: inline-block;
-  margin-bottom: 3ch;
-  cursor: pointer; }
-  /* line 345, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .blogpost-card .wrapper {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    min-height: 23rem;
-    height: auto;
-    position: relative; }
-    /* line 37, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .blogpost-card .wrapper:hover {
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8); }
-  /* line 353, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .blogpost-card .bottom-push {
-    width: 100%;
-    position: absolute;
-    bottom: 0; }
-    /* line 357, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .blogpost-card .bottom-push .date {
-      width: 45%;
-      max-width: 30ch;
-      text-align: center;
-      padding: .2rem 2ch;
-      background-color: #4ecdc4;
-      font: 600 0.8rem/1.3 "Open Sans", "Helvetica", "Arial", sans-serif;
-      text-transform: uppercase;
-      color: #fff; }
-    /* line 367, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .blogpost-card .bottom-push .content {
-      width: 100%;
-      height: auto;
-      text-align: left;
-      padding: 1.5ch;
-      background-color: #fff; }
-      /* line 373, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-      .blogpost-card .bottom-push .content .title {
-        font: bold 1.1em/1.3em "Open Sans", "Helvetica", "Arial", sans-serif;
-        color: #323232;
-        margin-bottom: 8px;
-        text-align: left; }
-      /* line 379, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-      .blogpost-card .bottom-push .content .description {
-        display: block;
-        font: 600 0.9em/1.3em "Open Sans", "Helvetica", "Arial", sans-serif;
-        color: #4ecdc4; }
-      /* line 384, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-      .blogpost-card .bottom-push .content .tag {
-        transition: color ease 0.3s;
-        font: 0.8em/1em "Operator Mono", "Roboto Mono", "Monaco", monospace;
-        color: #b6b9ba; }
-        /* line 388, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-        .blogpost-card .bottom-push .content .tag:hover {
-          color: #4a4a4a; }
-
-/* line 397, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.pagination-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-
-/* line 402, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.pagination-menu .list {
-  margin: 0;
-  padding: 0; }
-  /* line 404, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .pagination-menu .list .item {
-    float: left; }
-    /* line 406, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .pagination-menu .list .item:before, .pagination-menu .list .item:after {
-      clear: both; }
-
-/* line 409, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.pagination-menu .part {
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  padding: 3px 5px;
-  background-color: #fff;
-  font: 600 0.8em/1.3em "Open Sans", "Helvetica", "Arial", sans-serif;
-  letter-spacing: 1.5px;
-  color: #4a4a4a; }
-
-/* line 418, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.pagination-menu .disabled {
-  cursor: default;
-  background-color: #C3C0C4; }
-
-/* line 422, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.pagination-menu .indicator {
-  padding-left: 20px;
-  padding-right: 20px;
-  cursor: default; }
-
-/* line 427, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.pagination-menu .enabled {
-  transition: color ease 0.3s; }
-  /* line 37, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .pagination-menu .enabled:hover {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8); }
-  /* line 430, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .pagination-menu .enabled:hover {
-    color: #4ecdc4; }
-
-/* line 437, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.post-container {
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
-  background-color: #fff;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  width: 90%;
-  max-width: 980px;
-  overflow: hidden; }
-  /* line 445, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container h1, .post-container h2, .post-container h3, .post-container h4, .post-container h5, .post-container h6 {
-    text-align: center;
-    padding: 0; }
-  /* line 449, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container hr {
-    max-width: 890px;
-    width: 100%; }
-
-/* line 454, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.featured-photo {
-  width: 100%;
-  height: 420px;
-  margin-bottom: 25px;
-  padding: 0 60px;
-  background-color: #323232;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center; }
-
-/* line 465, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.post-title {
-  color: #ecf0f1;
-  margin: 0;
-  font-size: 2.5em;
-  letter-spacing: .5px;
-  line-height: 1.3;
-  margin-bottom: .3em; }
-
-/* line 473, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.post-subtitle {
+}
+.social li {
+  float: left;
+  margin: 0 10px;
+}
+.social a {
+  color: white;
+  text-decoration: none;
   font-size: 1.2em;
-  line-height: 1.3em;
-  font-weight: normal;
-  color: #b6b9ba;
-  margin-bottom: .5em; }
+  transition: ease .7s all;
+}
+.social a:hover { opacity: .7; }
 
-/* line 481, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.post-meta {
-  color: #b6b9ba; }
-  /* line 483, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-meta .post-date {
-    text-transform: uppercase;
-    font-weight: light; }
-  /* line 487, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-meta .post-tags a {
-    transition: color ease 0.3s;
-    font: 1em/1em "Operator Mono", "Roboto Mono", "Monaco", monospace;
-    color: #b6b9ba; }
-    /* line 491, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .post-meta .post-tags a:hover {
-      color: #4ecdc4; }
 
-/* line 495, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.post-content {
-  padding: 0 10ch;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
-  color: #4a4a4a; }
-  /* line 501, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-    text-align: left;
-    margin: 1em 0 .5em 0;
-    line-height: 1.2em; }
-  /* line 507, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-content p, .post-content ul li, .post-content ol li, .post-content pre {
-    line-height: 1.7; }
-  /* line 508, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-content p {
-    margin-bottom: 1.5rem; }
-  /* line 510, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-content .highlight {
-    overflow-x: auto; }
-    /* line 512, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .post-content .highlight pre {
-      border: none; }
-    /* line 513, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .post-content .highlight table {
-      width: 100%;
-      margin: 0;
-      text-align: left;
-      background-color: #f6f6f6;
-      border: 1px solid #ecf0f1; }
-    /* line 520, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .post-content .highlight .gutter {
-      width: 1rem; }
-    /* line 521, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .post-content .highlight td {
-      background-color: transparent;
-      border: none; }
+/** Main **/
 
-/* line 528, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.author {
-  display: flex;
-  width: 90%;
-  max-width: 890px;
-  margin: 0 auto; }
-  /* line 533, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .author .avatar {
-    max-height: 150px;
-    height: 100%;
-    border-radius: 50%; }
-  /* line 538, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .author .author-name {
-    width: 100%;
-    text-align: left; }
-  /* line 542, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .author .author-bio {
-    align-self: flex-end; }
 
-/* line 547, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.comments-area {
-  width: 85%;
-  max-width: 890px;
-  margin: 0 10ch; }
-  /* line 551, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .comments-area .title {
-    text-align: left;
-    padding: 0; }
-
-@media screen and (max-width: 1200px) {
-  /* line 561, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .blogpost-card {
-    width: 40%; } }
-
-@media screen and (max-width: 650px) {
-  /* line 564, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .card-container {
-    margin: 0 auto; }
-  /* line 565, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .blogpost-card {
-    width: 100%; }
-  /* line 566, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .footer {
-    height: 5ch;
-    padding: 0 3ch; }
-  /* line 570, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ::-webkit-scrollbar {
-    display: none; }
-  /* line 573, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block {
-    flex-wrap: wrap; }
-    /* line 575, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .page-layout .social-block .item {
-      width: 50%; } }
-
-@media screen and (max-width: 1100px) {
-  /* line 580, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .comments-area {
-    padding: 0 60px; } }
-
-@media screen and (max-width: 768px) {
-  /* line 581, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .header {
-    height: 190px; } }
-
-@media screen and (max-width: 500px) {
-  /* line 583, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  h1 {
-    font-size: 1.8em; }
-  /* line 584, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  h2 {
-    font-size: 1.5em; }
-  /* line 585, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  h3 {
-    font-size: 1.3em; }
-  /* line 586, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  h4 {
-    font-size: 1.2em; }
-  /* line 587, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  h5 {
-    font-size: 1.1em; }
-  /* line 588, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  h6 {
-    font-size: 1em; }
-  /* line 589, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  ol, ul {
-    padding-left: 10px; }
-  /* line 590, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  dl dd {
-    text-indent: 0;
-    margin-left: 50px; }
-  /* line 594, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  hr {
-    margin: 0 auto;
-    margin-bottom: 1em; }
-  /* line 599, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container .featured-photo {
-    margin-bottom: 20px;
-    padding: 15px 25px; }
-  /* line 603, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container .post-title {
-    padding: 0;
-    font-size: 1.4em;
-    letter-spacing: .5px;
-    line-height: 1.4; }
-  /* line 609, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container .page-layout h1 {
-    font-size: 1.4em; }
-  /* line 610, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container .post-subtitle {
-    margin: 12px 0;
-    padding: 0;
-    line-height: 1.2;
-    font-size: 1em; }
-  /* line 616, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container .post-meta {
-    font-size: .8em;
-    text-align: center; }
-  /* line 622, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container .post-content {
-    padding: 0 40px; }
-    /* line 624, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .post-container .post-content h1, .post-container .post-content h2, .post-container .post-content h3, .post-container .post-content h4, .post-container .post-content h5, .post-container .post-content h6 {
-      padding: 0;
-      margin-top: .5em; }
-    /* line 628, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .post-container .post-content p {
-      margin-bottom: .5em; }
-  /* line 630, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .post-container .comments-area {
-    padding: 0 30px; } }
-
-/* line 642, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.page-layout .featured-photo {
-  max-height: 200px; }
-
-/* line 643, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.page-layout .post-content {
-  padding: 0;
-  margin-bottom: 0;
-  text-align: justify; }
-
-/* line 648, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.page-layout .post-title {
-  color: #323232;
+main { display: flex; }
+main .content {
+  align-self: center;
+  margin: 0 auto;
+  padding: 3em;
+}
+.subtitle {
   text-align: center;
-  margin-top: .5em;
-  letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 2.2em; }
+  color: #4a4a4a;
+  letter-spacing: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+.emphasis {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main p {
+  text-align: justify;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
 
-/* line 656, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.page-layout h1, .page-layout h2, .page-layout p {
-  padding: 0 60px; }
+/** Query **/
 
-/* line 659, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.page-layout .social-block-container {
-  width: 100%;
-  padding: 0; }
-
-/* line 663, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-.page-layout .social-block {
-  margin: 20px 0 0 0;
-  background-color: #b6b9ba;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  /* line 668, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block .item {
-    display: inline-block;
-    width: 25%;
-    height: 10rem;
-    padding: 0;
-    text-align: center;
-    border-right: 1px solid #A5A7A8;
+@media screen and (max-width: 750px){
+  body {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    width: 100vw;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-    /* line 676, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .page-layout .social-block .item:last-child {
-      border-right: none; }
-    /* line 677, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .page-layout .social-block .item .fa {
-      font-size: 3em;
-      color: #4a4a4a; }
-  /* line 683, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block .twitter, .page-layout .social-block .linkedin, .page-layout .social-block .github, .page-layout .social-block .mail {
-    transition: background-color .2s ease; }
-    /* line 685, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .page-layout .social-block .twitter .fa, .page-layout .social-block .linkedin .fa, .page-layout .social-block .github .fa, .page-layout .social-block .mail .fa {
-      transition: color .2s ease; }
-    /* line 687, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .page-layout .social-block .twitter:hover .fa, .page-layout .social-block .linkedin:hover .fa, .page-layout .social-block .github:hover .fa, .page-layout .social-block .mail:hover .fa {
-      color: #fff; }
-  /* line 690, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block .twitter:hover {
-    background-color: #55ACEE; }
-  /* line 691, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block .linkedin:hover {
-    background-color: #007BB5; }
-  /* line 692, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block .github:hover {
-    background-color: #323232; }
-  /* line 693, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block .mail:hover {
-    background-color: #4ecdc4; }
-
-@media screen and (max-width: 650px) {
-  /* line 699, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .post-title {
-    font-size: 1.8rem; }
-  /* line 700, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout h1, .page-layout h2, .page-layout p {
-    padding: 0 2.5ch; }
-  /* line 701, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block {
-    flex-wrap: wrap; }
-    /* line 703, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .page-layout .social-block .item {
-      width: 50%; }
-      /* line 705, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-      .page-layout .social-block .item:nth-child(1), .page-layout .social-block .item:nth-child(2) {
-        border-bottom: 1px solid #A5A7A8; } }
-
-@media screen and (max-width: 350px) {
-  /* line 712, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-  .page-layout .social-block .item {
+    flex-wrap: nowrap;
+    padding: 10px 0;
+  }
+  .sidebar .content {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #A5A7A8; }
-    /* line 716, /Users/ricardogouveia3/Dev/hexo-blogs/ricardogouveia3/themes/wrecking/source/css/main.scss */
-    .page-layout .social-block .item:last-child {
-      border: none; } }
+    margin-top: 0;
+    align-self: center;
+    justify-content: center;
+  }
+  .avatar {
+    max-width: 105px;
+    border: solid .5ch white;
+  }
+  .title { font-size: 1.6em; }
+  hr { display: none; }
+  .description { font-size: .9em; }
+  .social ul { margin-top: 10px; }
+
+  main .content { padding: 1.5em; }
+  .subtitle {
+    font-size: 1.4em;
+    margin: 1em 0;
+  }
+  main p { font-size: .9em; }
