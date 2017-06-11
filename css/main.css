@@ -1,4 +1,5 @@
 * { box-sizing: border-box; }
+html { font-size: 20px; }
 body {
   overflow: hidden;
   text-rendering: optimizeLegibility;
@@ -98,8 +99,7 @@ main p {
 }
 
 /** Query **/
-
-@media screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
   body {
     display: block;
     overflow-y: auto;
@@ -119,17 +119,57 @@ main p {
     justify-content: center;
   }
   .avatar {
-    max-width: 105px;
+    width: 100px;
     border: solid .5ch white;
   }
-  .title { font-size: 1.6em; }
+  .title { font-size: 2em; }
   hr { display: none; }
-  .description { font-size: .9em; }
+  .description { font-size: 1.1em; }
   .social ul { margin-top: 10px; }
+  .social li { margin: 0 30px }
+  .social a { font-size: 1.5em; }
 
   main .content { padding: 1.5em; }
   .subtitle {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin: 1em 0;
   }
   main p { font-size: .9em; }
+}
+@media only screen and (max-device-width: 500px){
+  body {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+  }
+  .sidebar .content {
+    width: 100%;
+    margin-top: 0;
+    align-self: center;
+    justify-content: center;
+  }
+  .avatar {
+    max-width: 200px;
+    border: solid 1ch white;
+  }
+  .title { font-size: 4em; }
+  hr { display: none; }
+  .description { font-size: 2.3em; }
+  .social ul { margin-top: 10px; }
+  .social li { margin: 0 30px }
+  .social a { font-size: 3em; }
+
+  main .content { padding: 1.5em; }
+  .subtitle {
+    font-size: 2em;
+    margin: 1em 0;
+  }
+  main p { font-size: .9em; }
+}
