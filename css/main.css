@@ -23,14 +23,14 @@ body {
   padding: 0 .8em;
 }
 .avatar {
-  border: solid .7ch white;
+  border: solid .5ch white;
   margin-bottom: 10px;
   border-radius: 50%;
   width: 30%;
 }
 .title {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: bold;
   color: white;
   margin-bottom: 10px;
@@ -97,6 +97,13 @@ main p {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+main p .italic { font-style: italic; }
+main p a {
+  color: #939393;
+  text-decoration: none;
+  transition: ease .7s all;
+}
+main p a:hover { color: #4ECDC4; }
 
 /** Query **/
 @media only screen and (max-width: 750px) {
@@ -136,6 +143,7 @@ main p {
   }
   main p { font-size: .9em; }
 }
+
 @media only screen and (max-device-width: 500px){
   body {
     display: block;
